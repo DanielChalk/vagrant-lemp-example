@@ -1,0 +1,17 @@
+{
+	"run_list": ["recipe[lemp]"],
+	"mysql": {
+		"server_debian_password": "",
+		"server_root_password": "",
+		"server_repl_password": ""
+	},
+	"lemp": {
+		"app_name": "example",
+		"app_root": "/var/www/example/public",
+		"database": {
+			"name": "example_db",
+			"username": "example_user",
+			"password": "example_passwd"
+		}
+	}
+}
