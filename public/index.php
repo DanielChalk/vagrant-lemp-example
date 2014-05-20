@@ -6,7 +6,7 @@ try
 	$db_user = "example_user";
 	$db_name = "example_db";
 	$db_password = "example_passwd";
-	$db = new PDO("mysql://{$db_host}/{$db_name}", $db_user, $db_password);
+	$db = new PDO("mysql:host={$db_host};dbname={$db_name}", $db_user, $db_password);
 	?>
 	<h1>Success</h1>
 	<p>Connected to <?php echo $db_host ?>/<?php echo $db_name ?> as 
