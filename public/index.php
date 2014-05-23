@@ -21,3 +21,7 @@ catch(Exception $e)
 	<textarea><?php echo $e->getTraceAsString() ?></textarea>
 	<?php
 }
+
+?>
+<h1>
+<?php phpinfo();
