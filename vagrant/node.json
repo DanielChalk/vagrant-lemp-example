@@ -8,6 +8,8 @@
 	"lemp": {
 		"app_name": "example",
 		"app_root": "/var/www/example/public",
+		"user": "vagrant",
+		"group": "vagrant",
 		"database": {
 			"name": "example_db",
 			"username": "example_user",

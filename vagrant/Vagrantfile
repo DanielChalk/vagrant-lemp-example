@@ -23,9 +23,9 @@
 
 Vagrant.configure("2") do |config|
   config.vm.hostname = "lemp-cookbook"
-  config.vm.box = "ubuntu/trusty64"
+  config.vm.box = "chef/centos-6.5"
   # on older versions of vagrant you will need the URL to the box
-  config.vm.box_url = "https://vagrantcloud.com/ubuntu/trusty64/version/1/provider/virtualbox.box"
+  config.vm.box_url = "https://vagrantcloud.com/chef/centos-6.5/version/1/provider/virtualbox.box"
   config.vm.network :private_network, ip: "33.33.33.10"
   # synced folders - make sure app_root in node.json is either this path or a child of.
   config.vm.synced_folder "..", "/var/www/example"

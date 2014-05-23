@@ -1,7 +1,7 @@
 site :opscode
 
+cookbook "lemp", git: "https://github.com/DanielChalk/lemp-cookbook.git"
+cookbook "php54", git: "https://github.com/DanielChalk/php54-cookbook.git"
 cookbook "nginx"
-cookbook "php-fpm"
 cookbook "mysql"
 cookbook "database"
-cookbook "lemp", git: 'https://github.com/DanielChalk/lemp-cookbook.git'
